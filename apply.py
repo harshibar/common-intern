@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 import os # to get the resume file
-import time # to sleep
+from time import sleep # to sleep
 
 # sample applications
 URL_g1 = 'https://boards.greenhouse.io/braintree/jobs/1316736?gh_jid=1316736&gh_src=1d1244401'
@@ -52,7 +52,7 @@ def greenhouse(driver):
         loc.send_keys(Keys.DOWN) # manipulate a dropdown menu
         loc.send_keys(Keys.DOWN)
         loc.send_keys(Keys.RETURN)
-        time.sleep(2) # give user time to manually input if this fails
+        sleep(2) # give user time to manually input if this fails
 
     except NoSuchElementException:
         pass
@@ -161,7 +161,7 @@ def lever(driver):
     driver.find_element_by_class_name('template-btn-submit').click()
 
 if __name__ == '__main__':
-    driver = webdriver.Chrome(executable_path='/Users/harshita/chromedriver')
+    driver = webdriver.Chrome(executable_path='./chromedriver.exe')
 
     for url in URLS:
         driver.get(url)
@@ -172,5 +172,5 @@ if __name__ == '__main__':
         if 'lever' in url:
             lever(driver)
 
-        time.sleep(1) # can lengthen this as necessary (for captcha, for example)
+        sleep(1) # can lengthen this as necessary (for captcha, for example)
     driver.close()
