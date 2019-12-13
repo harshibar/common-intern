@@ -33,7 +33,7 @@ def greenhouse(empty_form):
     print (empty_form.keys())
     for key in empty_form.keys():
         try:
-            key.encode('utf8')
+            key.encode('utf-8')
             print(key)
         except:
             print ('fail')
