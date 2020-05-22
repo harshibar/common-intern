@@ -3,8 +3,9 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 import os # to get the resume file
 import time # to sleep
+import get_links
 
-# sample applications
+# sample application links if we don't want to run get_links.py
 URL_g1 = 'https://boards.greenhouse.io/braintree/jobs/1316736?gh_jid=1316736&gh_src=1d1244401'
 URL_g2 = 'https://boards.greenhouse.io/gusto/jobs/1862076'
 URL_g4 = 'https://boards.greenhouse.io/thumbtack/jobs/1814883'
@@ -26,14 +27,14 @@ JOB_APP = {
     "org": "Self-Employed",
     "resume": "resume.pdf",
     "resume_textfile": "resume_short.txt",
-    "linkedin": "https://www.linkedin.com/in/hyerramreddy/",
-    "website": "www.harshi.me",
+    "linkedin": "https://www.linkedin.com/",
+    "website": "www.youtube.com/harshibar",
     "github": "https://github.com/harshibar",
     "twitter": "www.twitter.com",
-    "location": "Austin, Texas, United States",
+    "location": "San Francisco, California, United States",
     "grad_month": '06',
     "grad_year": '2021',
-    "university": "Harvard" # not tru
+    "university": "MIT" # if only o.O
 }
 
 # Greenhouse has a different application form structure than Lever, and thus must be parsed differently
@@ -161,16 +162,38 @@ def lever(driver):
     driver.find_element_by_class_name('template-btn-submit').click()
 
 if __name__ == '__main__':
-    driver = webdriver.Chrome(executable_path='/Users/harshita/chromedriver')
 
-    for url in URLS:
-        driver.get(url)
+    # call get_links to automatically scrape job listings from glassdoor
+    aggregatedURLs = get_links.getURLs()
+    print(f'Job Listings: {aggregatedURLs}')
+    print('\n')
+
+    driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver')
+    for url in aggregatedURLs:
+        print('\n')
 
         if 'greenhouse' in url:
-            greenhouse(driver)
+            driver.get(url)
+            try:
+                greenhouse(driver)
+                print(f'SUCCESS FOR: {url}')
+            except Exception:
+                # print(f"FAILED FOR {url}")
+                continue
 
-        if 'lever' in url:
-            lever(driver)
+        elif 'lever' in url:
+            driver.get(url)
+            try:
+                lever(driver)
+                print(f'SUCCESS FOR: {url}')
+            except Exception:
+                # print(f"FAILED FOR {url}")
+                continue
+        # i dont think this else is needed
+        else:
+            # print(f"NOT A VALID APP LINK FOR {url}")
+            continue
 
         time.sleep(1) # can lengthen this as necessary (for captcha, for example)
+
     driver.close()
