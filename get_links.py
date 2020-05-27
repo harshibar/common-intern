@@ -181,4 +181,4 @@ def getURLs():
     return allLinks
 
 # for testing purpose
-# getURLs(webdriver.Chrome())
+# getURLs()
