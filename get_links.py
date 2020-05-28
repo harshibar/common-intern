@@ -17,7 +17,7 @@ import time # to sleep
 
 # fill this in with your job preferences!
 PREFERENCES = {
-    "position_title": "Full-Stack Engineer",
+    "position_title": "Software Engineer",
     "location": "San Francisco, CA"
 }
 
@@ -141,7 +141,7 @@ def getURLs():
     allLinks = set()
     page = 1
     next_url = ''
-    while page < 10: # pick an arbitrary number of pages so this doesn't run infinitely
+    while page < 5: # pick an arbitrary number of pages so this doesn't run infinitely
         print(f'\nNEXT PAGE #: {page}\n')
 
         # on the first page, the URL is unique and doesn't have a field for the page number
@@ -181,4 +181,4 @@ def getURLs():
     return allLinks
 
 # for testing purpose
-# getURLs(webdriver.Chrome())
+# getURLs()

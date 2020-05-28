@@ -6,17 +6,18 @@ import time # to sleep
 import get_links
 
 # sample application links if we don't want to run get_links.py
-URL_g1 = 'https://boards.greenhouse.io/braintree/jobs/1316736?gh_jid=1316736&gh_src=1d1244401'
-URL_g2 = 'https://boards.greenhouse.io/gusto/jobs/1862076'
-URL_g4 = 'https://boards.greenhouse.io/thumbtack/jobs/1814883'
-URL_g3 = 'https://boards.greenhouse.io/lyft/jobs/4358047002?gh_jid=4358047002'
-URL_l1 = 'https://jobs.lever.co/figma/91da97b9-ff1d-4e08-a2f1-4867537e5eb2'
-URL_l2 = 'https://jobs.lever.co/blendlabs/2a469512-a8c2-44fa-a260-ef3ae0c90db7'
-URL_l3 = 'https://jobs.lever.co/affirm/5340f1d3-cd6d-44ef-a5c6-f9def8609d02'
-URL_l4 = 'https://jobs.lever.co/grandrounds/cbf92d6f-83c2-41a3-b1a7-350e338c76a7'
+URL_l2 = 'https://jobs.lever.co/scratch/2f09a461-f01d-4041-a369-c64c1887ed97/apply?lever-source=Glassdoor'
+URL_l3 = 'https://jobs.lever.co/fleetsmith/eb6648a6-7ad9-4f4a-9918-8b124e10c525/apply?lever-source=Glassdoor'
+URL_l4 = 'https://jobs.lever.co/stellar/0e5a506b-1964-40b4-93ab-31a1ee4e4f90/apply?lever-source=Glassdoor'
+URL_l6 = 'https://jobs.lever.co/verkada/29c66147-82ef-4293-9a6a-aeed7e6d619e/apply?lever-source=Glassdoor'
+URL_l8 = 'https://jobs.lever.co/rimeto/bdca896f-e7e7-4f27-a894-41b47c729c63/apply?lever-source=Glassdoor'
+URL_l9 = 'https://jobs.lever.co/color/20ea56b8-fed2-413c-982d-6173e336d51c/apply?lever-source=Glassdoor'
+URL_g1 = 'https://boards.greenhouse.io/instabase/jobs/4729606002?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic'
+
 
 # there's probably a prettier way to do all of this
-URLS = [URL_g1, URL_g2, URL_g3, URL_g4, URL_l1, URL_l2, URL_l3, URL_l4] # to test all the URLS
+# test URLs so we don't have to call get_links
+URLS = [URL_g1, URL_l4, URL_l3, URL_l6, URL_l8, URL_l9]
 
 # Fill in this dictionary with your personal details!
 JOB_APP = {
