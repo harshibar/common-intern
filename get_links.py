@@ -13,7 +13,7 @@ import json
 import urllib.request
 import re
 
-import time # to sleep
+import time 
 
 # fill this in with your job preferences!
 PREFERENCES = {
