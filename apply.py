@@ -21,16 +21,16 @@ URLS = [URL_g1, URL_l4, URL_l3, URL_l6, URL_l8, URL_l9]
 
 # Fill in this dictionary with your personal details!
 JOB_APP = {
-    "first_name": "Harshi",
+    "first_name": "Foo",
     "last_name": "Bar",
-    "email": "info.harshibar@gmail.com",
+    "email": "test@test.com",
     "phone": "123-456-7890",
     "org": "Self-Employed",
     "resume": "resume.pdf",
     "resume_textfile": "resume_short.txt",
     "linkedin": "https://www.linkedin.com/",
-    "website": "www.youtube.com/harshibar",
-    "github": "https://github.com/harshibar",
+    "website": "www.youtube.com",
+    "github": "https://github.com",
     "twitter": "www.twitter.com",
     "location": "San Francisco, California, United States",
     "grad_month": '06',
