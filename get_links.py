@@ -128,7 +128,9 @@ def aggregate_links(driver):
 
 # 'main' method to iterate through all pages and aggregate URLs
 def getURLs():
-    driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver')
+    options = webdriver.ChromeOptions()
+    options.add_argument("--kiosk")
+    driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver', options=options)
     success = login(driver)
     if not success:
         # close the page if it gets stuck at some point - this logic can be improved
