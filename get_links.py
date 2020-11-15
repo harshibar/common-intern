@@ -50,6 +50,8 @@ def go_to_listings(driver):
         # fill in with pre-defined data
         position_field.send_keys(PREFERENCES['position_title'])
         location_field.clear()
+        location_field.send_keys(Keys.CONTROL + "a")
+        location_field.send_keys(Keys.DELETE)
         location_field.send_keys(PREFERENCES['location'])
 
         # wait for a little so location gets set
