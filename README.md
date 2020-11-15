@@ -19,6 +19,16 @@ Ever sit at your desk for hours, clicking through endless job listings hoping to
 2. Install Selenium: `pip install selenium`
 3. Install BeautifulSoup: `pip install beautifulsoup4`
 
+### Windows
+1. Install Python 64-bit
+2. Add Python scripts to PATH Environment Variable
+3. Install pip (pip will let you know what to add to PATH)
+4. Download [ChromeDriver](https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_win32.zip) for Windows
+5. Extract ChromeDriver to `C:\Windows` to make it available everywhere
+6. Remove ChromeDriver location where `driver` is initialized in the code.
+7. Install Selenium: `pip install selenium`
+8. Install BeautifulSoup: `pip install beautifulsoup4`
+
 ## Usage
 #### To test `get_links.py`
 1. Uncomment the last line `get_links.py`
