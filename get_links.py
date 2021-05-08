@@ -35,6 +35,20 @@ def login(driver):
 
 # navigate to appropriate job listing page
 def go_to_listings(driver):
+    try:
+        signin_button = driver.find_element_by_xpath("//*[@id='SiteNav']/nav/div[2]/div/div/div/button")
+        signin_button.click()
+        login_email_f = driver.find_element_by_name("username")
+        login_email_f.send_keys('youremail@live.com')
+        login_pass = driver.find_element_by_xpath('//*[@id="userPassword"]')
+        # You'll need to place a password.txt file with a .gitignore section for ignroring it.
+        with open('password.txt') as f:
+            password = f.read()
+            login_pass.send_keys(password)
+        login_submit = driver.find_elements_by_xpath('//*[@id="LoginModal"]/div/div/div[2]/div[2]/div[2]/div/div/div/div[3]/form/div[3]/div[1]/button')[0]
+        login_submit.click()
+    except Exception as e:
+        print("Failed login automation with error: {}".format(e))
 
     # wait for the search bar to appear
     element = WebDriverWait(driver, 20).until(
