@@ -1,0 +1,46 @@
+Harold F. Pasion
+pasionharold252002@gmail.com | +63 992 465 8229
+[https://github.com/arownz](https://github.com/arownz) | [https://harolddevfolio.netlify.app/](https://harolddevfolio.netlify.app/)
+Bacoor, Cavite, Philippines
+
+EDUCATION
+National University — BS Information Technology (Specializing in Mobile & Web) (2022 - 2026)
+
+SKILLS
+
+* Languages: HTML5/CSS3, JavaScript, TypeScript, PHP, Python, Java, SQL (PostgreSQL, MySQL, MariaDB)
+* Frameworks & Libraries: React, Vue.js, Flutter, React Native, Laravel, Bootstrap, Tailwind CSS, Node.js
+* Databases & BaaS: Firebase (NoSQL), Supabase (PostgreSQL), MySQL, MariaDB
+* Tools & Environments: Git, GitHub, Docker, Google Cloud, AWS, Android Studio, VS Code, Postman, Figma
+
+EXPERIENCE
+Endsofttech Web Solutions — Full-Stack Developer and Quality Assurance Intern (Nov 2025 - Apr 2026)
+
+* Implemented critical product enhancements for the client-facing and backend of Vet Assist App, directly optimizing usability, responsiveness, and performance.
+* Collaborated tightly with core development teams to debug live production systems and implement object-oriented programming principles in a structured codebase architecture.
+* Headed web application testing and structured comprehensive quality assurance flows to secure cross-platform system reliability.
+
+MSQ Business Services, Inc. — Office / Student Assistant (Aug 2024 - Feb 2025)
+
+* Executed high-accuracy data encoding and documentation management.
+* Developed a Python automation script to automate repeatable data encoding processes in Microsoft Excel.
+* Assisted with IT troubleshooting, including fixing Windows OS issues, printer/peripheral setups, and basic software configuration.
+
+PROJECTS
+Lexia - Dyslexia Learning Platform (Capstone)
+
+* Developed an accessibility-focused, gamified learning mobile application for children with dyslexia using Godot Engine, GDScript, and HTML5.
+* Integrated Google Cloud Ecosystem solutions to deliver robust text-to-speech (TTS), speech-to-text (STT), and optical character recognition (OCR) functionalities.
+* Co-developed a centralized web administration console utilizing React, Bootstrap, and Firebase to track user diagnostics.
+
+Resumay Tailor Swift - AI Resume Tailoring
+
+* Implemented a Claude Agentic workflow to develop a web-based AI automation layer leveraging Hugging Face open-source models to intelligently dynamically realign resumes against target descriptions.
+* Built standard layout templates using React and Tailwind CSS, serving instant preview models and fast PDF exports.
+
+CERTIFICATES
+
+* The PMI Project Management Ready — Project Management Institute (Credential ID: yyVk-DwWk)
+* IT Specialist: HTML & CSS — Certiport (Credential ID: bFez-s4qu)
+* TESDA National Certifications & Competencies: Install and Configure Computer Systems (ICCS) | Maintain Computer Systems and Networks (MCSN) | Set-up Computer Networks (SCN) | Set-up Computer Servers (SCS) | Introduction to Cascading Style Sheets (ICSS)
+* What Is Generative AI? — LinkedIn Learning
