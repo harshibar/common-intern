@@ -1,0 +1,6 @@
+{
+    "python.defaultInterpreterPath": "C:\\Python313\\python.exe",
+    "python.analysis.extraPaths": [
+        "C:\\Users\\pasio\\AppData\\Roaming\\Python\\Python313\\site-packages"
+    ]
+}
